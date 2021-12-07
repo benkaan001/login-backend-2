@@ -2,7 +2,7 @@ const router = require("express").Router();
 const mongoose = require("mongoose");
 
 router.get("/", (req, res) => {
-  res.send("Welcome home!");
+  res.render("homepage");
 });
 
 module.exports = router;

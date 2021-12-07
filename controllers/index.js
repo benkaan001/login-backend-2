@@ -8,8 +8,8 @@ router.use("/", homeRoutes);
 const userRoutes = require("./user-routes");
 router.use("/users", userRoutes);
 
-// // add dashboard routes
-// const dashboardRoutes = require("./dashboard-routes.js");
-// router.use("/dashboard", dashboardRoutes);
+// add dashboard routes
+const dashboardRoutes = require("./dashboard-routes.js");
+router.use("/dashboard", dashboardRoutes);
 
 module.exports = router;
