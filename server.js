@@ -9,6 +9,7 @@ const session = require("express-session");
 const mongoose = require("mongoose");
 const expressLayouts = require("express-ejs-layouts");
 const passport = require("passport");
+const routes = require("./controllers");
 
 // Express body
 app.use(express.json());
@@ -22,6 +23,7 @@ app.use(
     saveUninitialized: false,
   })
 );
+app.use(routes);
 
 //passport middleware
 app.use(passport.initialize());
